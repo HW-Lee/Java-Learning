@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#345678"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/getIndex"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="Go" />
+    <FrameLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="4" >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" >
+            <com.example.numberpicker.NumberPicker
+                android:id="@+id/powerOf2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:cacheColorHint="#000000" />
+            <com.example.numberpicker.NumberPicker
+                android:id="@+id/powerOf1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:cacheColorHint="#000000" />
+            <com.example.numberpicker.NumberPicker
+                android:id="@+id/powerOf0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:cacheColorHint="#000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" >
+            <View
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="#e0000000" />
+            <View
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+            <View
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="#e0000000" />
+        </LinearLayout>
+    </FrameLayout>
+    
+    <TextView
+        android:id="@+id/result"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="" />
+</LinearLayout>
